@@ -1,0 +1,43 @@
+select 
+	
+from orderbook;
+
+select count from cart;
+
+select A.count, A.count * B.price AS '주문금액', C.no, A.book_no
+from cart A, book B, buy C
+WHERE A.book_no = B.no
+  AND C.customer_no = A.customer_no;
+
+select * from book;
+
+select * from buy;
+
+
+select * from orderbook;
+
+delete from orderbook;
+delete from buy;
+delete from customer;
+delete from category;
+delete from cart;
+delete from buy;
+delete from book;
+
+select * from category;
+
+select * from customer;
+select * from buy;
+select * from book;
+select * from orderbook;
+
+ALTER TABLE category AUTO_INCREMENT=1;
+ALTER TABLE book AUTO_INCREMENT=1;
+ALTER TABLE customer AUTO_INCREMENT=1;
+ALTER TABLE buy AUTO_INCREMENT=1;
+
+
+ALTER TABLE orderbook AUTO_INCREMENT=1;
+ALTER TABLE orderbook AUTO_INCREMENT=1;
+
+select * from 
